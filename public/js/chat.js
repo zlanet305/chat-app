@@ -2,7 +2,6 @@ const socket = io()
 
 // Elements
 const $messageForm = document.querySelector('#message-form')
-// const $nameFormInput = $messageForm.querySelector('#name')
 const $messageFormInput = $messageForm.querySelector('#message')
 const $messageFormButton = $messageForm.querySelector('button')
 const $sendLocationButton = document.querySelector('#send-location')
@@ -28,8 +27,6 @@ $messageForm.addEventListener('submit', (e) => {
         if (error) {
             return console.log(error)
         }
-
-        console.log('Message delivered!')
     })
 })
 
